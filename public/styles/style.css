@@ -1,0 +1,168 @@
+/*GLOBAL STYLES*/
+
+body {
+	font-family: 'Amatic SC', cursive;
+}
+.container-fluid {
+	background: url("../images/flybox1.jpg")no-repeat;
+	background-size: 800px;
+	background-position: center;
+	display: block;
+	height: 1000px;
+	overflow: scroll;
+}
+.row {
+	text-align: center;
+	padding: 10px;
+}
+.slanted, .slanted2 {
+	-ms-transform: rotate(+2deg);
+	-webkit-transform: rotate(+2deg);
+	transform: rotate(+2deg);
+}
+
+/*MAIN PAGE*/
+
+.title {
+	text-align: center;
+	height: 150px;
+	padding-top: 20px;
+}
+
+h1 {
+	color: beige;
+	font-size: 120px;
+	font-weight: 900;
+	text-shadow:
+   		-1px -1px 0 #000,  
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+     	1px 1px 0 #000;
+}
+h3, h5 {
+	color: red;
+	font-size: 40px;
+	font-weight: 700;
+	/*border: 1px solid rgba(0,0,0,0.08);*/
+}
+.rowInventory, .singleNameRow {
+	
+	display: table;
+	margin: 0 auto;
+	/*filter: blur(5px);*/
+}
+.inventory, .singleName {
+	background-color: white;
+	border-radius: 40px;
+}
+
+input {
+	/*font-size: 25px;*/
+	font-family: sans-serif;
+}
+
+.flybutton1 {
+	text-align: center;
+	padding: 10px 0;
+}
+button {
+	color: black;
+	font-size: 30px;
+}
+.showForm {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 100px;
+  background: white;
+  color: black;
+  font-size: 30px;
+  /*color: rgba(0,0,0,0.18);*/
+  cursor: pointer;
+}
+
+form {
+	margin: 0 auto;
+}
+
+.engage {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 100px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-family: 'Amatic SC', cursive;	
+}
+
+ul {
+	display: block;
+	list-style-position: inside;
+	list-style-type: none;
+	text-align: center;
+	margin-right: 60px;
+}
+li {
+	color: white;
+	font-size: 20px;
+	padding: 10px 0;
+}
+a {
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+}
+
+.smallImg {
+	max-width: 70px;
+	max-height: 70px;
+	border-radius: 100px;
+	border: 1px solid red;
+}
+
+.goback {
+	font-size: 20px;
+}
+
+img {
+	border: 1px solid red;
+	border-radius: 100px;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+
+
+.delete {
+  margin-left: 0.618rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+/*SHOW STYLES*/
+
+.singleInfo {
+	max-width: 700px;
+	margin: 0 auto;
+	padding-right: 30px;
+}
+
+p {
+	background-color: white;
+	border-radius: 30px;
+	color: black;
+	font-size: 30px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.thumbnail {
+	display: block;
+}
+
+.description {
+	margin: 20px 0;
+}
+

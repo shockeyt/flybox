@@ -1,0 +1,75 @@
+
+<div class="container-fluid">
+	<div class="container title">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>flyBox</h1>
+			</div>
+		</div>	
+	</div>
+	<!-- <div ng-controller="FlyController as fly"> -->
+	<div class="container slanted" ng-controller="FlyController as fly">
+		<div class="row">
+			<div class="col-md-12 flybutton1">
+		<!-- {{fly.flyList}} -->
+				<button ng-click="reveal = !reveal" class="btn btn-info showForm">Add a Fly</button>
+			</div>
+		</div>
+
+		<div class="row" ng-show="reveal">
+			<form ng-submit="fly.addFly()">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+					<!-- <label for="name">name</label> -->
+					<input type="text" class="form-control" id="name" ng-model="fly.newFly.name" placeholder="name">
+					</div>
+					<div class="col-sm-6 form-group">
+					<!-- <label for="color">color</label> -->
+					<input type="text" class="form-control" id="color" ng-model="fly.newFly.color" placeholder="color">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 form-group">
+					<!-- <label for="size">size</label> -->
+					<input type="text" class="form-control" id="size" ng-model="fly.newFly.size" placeholder="size">
+					</div>
+					<div class="col-sm-6 form-group">
+					<!-- <label for="species">species</label> -->
+					<input type="text" class="form-control" id="species" ng-model="fly.newFly.species" placeholder="species">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+					<!-- <label for="picture">picture</label> -->
+					<input type="text" class="form-control" id="picture" ng-model="fly.newFly.picture" placeholder="picture URL">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+					<input type="submit" class="btn btn-warning engage" value="Submit">
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="row rowInventory">
+			<div class="col-md-12 inventory">
+				<h3>Current Collection</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul>
+					<li ng-repeat="flies in fly.flyList">
+						<strong><a href="/show/{{flies._id}}">{{flies.name}}</a></strong>
+						<img class="smallImg" ng-src="{{flies.picture}}">
+	<!-- 				<p>{{flies.color}}</p>
+						<p>{{flies.size}}</p>
+						<p>{{flies.species}}</p> -->
+						<button class="btn btn-danger delete" ng-click="fly.deleteFly(flies)">✂</button></br>
+					</li></br>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- container fluid -->

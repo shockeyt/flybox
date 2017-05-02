@@ -1,0 +1,1 @@
+angular.module('FlyBox', ['ngRoute']);

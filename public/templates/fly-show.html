@@ -1,0 +1,29 @@
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a class="goback" href="/">Go Back</a>
+			</div>
+		</div>	
+		<!-- <h1>Show route</h1> -->
+
+	<div class="slanted2" ng-controller="FlyShowController as showfly">
+		<div class="row singleNameRow">
+			<div class="col-sm-12 singleName">
+				<h5>{{showfly.singleFly.name}}</h5>
+			</div>
+		</div>
+		<div class="row singleInfo">
+			<div class="col-sm-12 col-md-6 col-lg-6 thumbnail">
+				<img src="{{showfly.singleFly.picture}}">
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 description">
+				<p>Color: {{showfly.singleFly.color}}</p>
+				<p>Size: {{showfly.singleFly.size}}</p>
+				<p>Insect Species: {{showfly.singleFly.species}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <h5>{{singleFly.name}}</h5> -->
